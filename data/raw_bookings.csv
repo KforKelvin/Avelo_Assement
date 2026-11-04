@@ -1,0 +1,12 @@
+booking_id,origin,dest,fare_usd,channel
+1, bur,LAS,$89.00,app
+2,HVN,mco,129,WEB
+2,HVN,mco,129,WEB
+3,hvn ,TPA,,app
+4,MCO,hvn ,$45.5,App
+5,LAS, bur,72.00,web
+6,rdu,MCO,$0,app
+7,BUR,LAS,95,
+8,HVN,TPA,,web
+9,las,BUR,$61.25,APP
+10,MCO,hvn,140,web

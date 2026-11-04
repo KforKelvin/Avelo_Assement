@@ -1,0 +1,100 @@
+AVELO - DATA ENGINEER SCREENING EXERCISE
+========================================
+
+Thanks for taking the time to do this. Setup should take about five minutes;
+the exercise itself is about an hour.
+
+
+WHAT'S IN HERE
+--------------
+
+  avelo_de_screen.ipynb   The exercise. Everything you do happens in here.
+  data/                   Five small CSV files the notebook loads. Don't edit these.
+  pyproject.toml          Pinned dependencies.
+  uv.lock                 Exact versions, so your numbers match ours.
+  .python-version         Python 3.14.
+
+
+SETUP
+-----
+
+You need Python 3.14 and an internet connection for the install step only
+(the exercise itself runs entirely offline, with no credentials or database
+access required).
+
+Recommended - using uv (https://docs.astral.sh/uv/):
+
+    uv sync
+
+That creates a .venv containing everything the notebook needs. Then open
+avelo_de_screen.ipynb in whatever you normally use - VS Code, Cursor,
+PyCharm, Jupyter - and select that .venv as the kernel.
+
+If you'd rather launch JupyterLab and don't already have it, uv can fetch it
+on demand without adding it to the project:
+
+    uv run --with jupyterlab jupyter lab avelo_de_screen.ipynb
+
+If you don't have uv and would rather not install it, plain pip works too:
+
+    python -m venv .venv
+    .venv\Scripts\activate          (Windows)
+    source .venv/bin/activate       (macOS / Linux)
+    pip install duckdb>=1.5.5 pandas>=3.0.5 ipykernel>=7.3.0 jupyterlab
+    jupyter lab avelo_de_screen.ipynb
+
+Any notebook environment is fine - use whatever you're comfortable in.
+
+
+CHECK IT WORKS
+--------------
+
+Run the Setup cell at the top of the notebook. You should see:
+
+    flights: (366, 8) | bookings: (48369, 5)
+
+followed by a three-row preview table. If you see that, you're ready to go.
+
+If the setup cell fails and you can't get past it, don't burn your hour
+fighting the environment - email us and we'll sort it out or send you a
+hosted version.
+
+
+A FEW THINGS WORTH KNOWING
+--------------------------
+
+- Sections 1 through 4 are the exercise. The Stretch section at the end is
+  genuinely optional. Leaving it completely blank will not count against you,
+  and we'd much rather see the first four sections done well than all five
+  done thinly.
+
+- Use whatever documentation, references, or AI assistants you'd normally use
+  at work. We're not trying to catch you out. We will, however, schedule about
+  30 minutes afterward to walk through your answers together and ask why you
+  made particular choices - so please make sure you can explain anything you
+  submit, including anything a tool helped you write.
+
+- Show your work. Leave your scratch cells, comments, and any wrong turns in
+  place. How you got there is genuinely more interesting to us than the final
+  number, and deleting the mess removes the most useful evidence.
+
+- If you run out of time, stop. There's a cell at the very bottom for notes -
+  tell us what you didn't get to and how you would have approached it. That
+  note is read and it counts. An honest "here's where I got stuck" is worth
+  considerably more to us than a blank section.
+
+- Roughly an hour is the target, but it's not a stopwatch. If it takes you
+  ninety minutes, or if you stop at forty-five, just tell us how long you
+  actually spent. We'd rather know than guess.
+
+
+SENDING IT BACK
+---------------
+
+Save the notebook with your outputs still in it (Run All isn't necessary -
+just don't clear the outputs), and email the .ipynb file back. You don't need
+to send the data folder or the environment.
+
+Questions, or anything broken: morgan.williams@aveloair.com
+
+Good luck - we're looking forward to talking it through with you.

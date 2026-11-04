@@ -1,0 +1,15 @@
+[project]
+name = "avelo-de-screen"
+version = "1.0.0"
+description = "Avelo data engineer screening exercise"
+requires-python = ">=3.14"
+dependencies = [
+    "duckdb>=1.5.5",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
